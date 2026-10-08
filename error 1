@@ -1,0 +1,847 @@
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:39:7: error: redeclared with 2 template parameters
+ class LinkedList {
+       ^~~~~~~~~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: previous declaration 'template<class T> class LinkedList' used 1 template parameter
+ class LinkedList{
+       ^~~~~~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In constructor 'StringArray::StringArray()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:187:37: error: no matching function for call to 'LinkedList<String>::LinkedList(std::nullptr_t)'
+   StringArray() : LinkedList(nullptr) {}
+                                     ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = String]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = String]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<String>::LinkedList(const LinkedList<String>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'std::nullptr_t' to 'const LinkedList<String>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In member function 'bool StringArray::containsIgnoreCase(const String&)':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'begin' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:87:5: note:   'std::begin'
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'end' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:97:5: note:   'std::end'
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: At global scope:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:449:36: error: 'ConstIterator' in 'using headers_t = class LinkedList<AsyncWebHeader*>' {aka 'class LinkedList<AsyncWebHeader*>'} does not name a type
+   using ConstIterator = headers_t::ConstIterator;
+                                    ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:455:3: error: 'ConstIterator' does not name a type
+   ConstIterator begin() const { return _headers.begin(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:456:3: error: 'ConstIterator' does not name a type
+   ConstIterator end() const { return _headers.end(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: In constructor 'DefaultHeaders::DefaultHeaders()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:446:57: error: no matching function for call to 'LinkedList<AsyncWebHeader*>::LinkedList(DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>)'
+   :_headers(headers_t([](AsyncWebHeader *h){ delete h; }))
+                                                         ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<AsyncWebHeader*>::LinkedList(const LinkedList<AsyncWebHeader*>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>' to 'const LinkedList<AsyncWebHeader*>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:468,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h: In member function 'bool AsyncWebSocketClient::canSend()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h:233:43: error: 'class LinkedList<AsyncWebSocketMessage*>' has no member named 'length'
+     bool canSend() { return _messageQueue.length() < WS_MAX_QUEUED_MESSAGES; }
+                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:469,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h: In member function 'size_t AsyncEventSourceClient::packetsWaiting() const':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h:93:59: error: 'const class LinkedList<AsyncEventSourceMessage*>' has no member named 'length'
+     size_t  packetsWaiting() const { return _messageQueue.length(); }
+                                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:39:7: error: redeclared with 2 template parameters
+ class LinkedList {
+       ^~~~~~~~~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: previous declaration 'template<class T> class LinkedList' used 1 template parameter
+ class LinkedList{
+       ^~~~~~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In constructor 'StringArray::StringArray()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:187:37: error: no matching function for call to 'LinkedList<String>::LinkedList(std::nullptr_t)'
+   StringArray() : LinkedList(nullptr) {}
+                                     ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = String]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = String]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<String>::LinkedList(const LinkedList<String>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'std::nullptr_t' to 'const LinkedList<String>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In member function 'bool StringArray::containsIgnoreCase(const String&)':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'begin' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:87:5: note:   'std::begin'
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'end' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:97:5: note:   'std::end'
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: At global scope:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:449:36: error: 'ConstIterator' in 'using headers_t = class LinkedList<AsyncWebHeader*>' {aka 'class LinkedList<AsyncWebHeader*>'} does not name a type
+   using ConstIterator = headers_t::ConstIterator;
+                                    ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:455:3: error: 'ConstIterator' does not name a type
+   ConstIterator begin() const { return _headers.begin(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:456:3: error: 'ConstIterator' does not name a type
+   ConstIterator end() const { return _headers.end(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: In constructor 'DefaultHeaders::DefaultHeaders()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:446:57: error: no matching function for call to 'LinkedList<AsyncWebHeader*>::LinkedList(DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>)'
+   :_headers(headers_t([](AsyncWebHeader *h){ delete h; }))
+                                                         ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<AsyncWebHeader*>::LinkedList(const LinkedList<AsyncWebHeader*>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>' to 'const LinkedList<AsyncWebHeader*>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:468,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h: In member function 'bool AsyncWebSocketClient::canSend()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h:233:43: error: 'class LinkedList<AsyncWebSocketMessage*>' has no member named 'length'
+     bool canSend() { return _messageQueue.length() < WS_MAX_QUEUED_MESSAGES; }
+                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:469,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\ReconMission.cpp:4:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h: In member function 'size_t AsyncEventSourceClient::packetsWaiting() const':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h:93:59: error: 'const class LinkedList<AsyncEventSourceMessage*>' has no member named 'length'
+     size_t  packetsWaiting() const { return _messageQueue.length(); }
+                                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:39:7: error: redeclared with 2 template parameters
+ class LinkedList {
+       ^~~~~~~~~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: previous declaration 'template<class T> class LinkedList' used 1 template parameter
+ class LinkedList{
+       ^~~~~~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In constructor 'StringArray::StringArray()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:187:37: error: no matching function for call to 'LinkedList<String>::LinkedList(std::nullptr_t)'
+   StringArray() : LinkedList(nullptr) {}
+                                     ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = String]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = String]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<String>::LinkedList(const LinkedList<String>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'std::nullptr_t' to 'const LinkedList<String>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In member function 'bool StringArray::containsIgnoreCase(const String&)':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'begin' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:87:5: note:   'std::begin'
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'end' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:97:5: note:   'std::end'
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: At global scope:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:449:36: error: 'ConstIterator' in 'using headers_t = class LinkedList<AsyncWebHeader*>' {aka 'class LinkedList<AsyncWebHeader*>'} does not name a type
+   using ConstIterator = headers_t::ConstIterator;
+                                    ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:455:3: error: 'ConstIterator' does not name a type
+   ConstIterator begin() const { return _headers.begin(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:456:3: error: 'ConstIterator' does not name a type
+   ConstIterator end() const { return _headers.end(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: In constructor 'DefaultHeaders::DefaultHeaders()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:446:57: error: no matching function for call to 'LinkedList<AsyncWebHeader*>::LinkedList(DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>)'
+   :_headers(headers_t([](AsyncWebHeader *h){ delete h; }))
+                                                         ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:1:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<AsyncWebHeader*>::LinkedList(const LinkedList<AsyncWebHeader*>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>' to 'const LinkedList<AsyncWebHeader*>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:468,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h: In member function 'bool AsyncWebSocketClient::canSend()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h:233:43: error: 'class LinkedList<AsyncWebSocketMessage*>' has no member named 'length'
+     bool canSend() { return _messageQueue.length() < WS_MAX_QUEUED_MESSAGES; }
+                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:469,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\CommandLine.h:13,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\MenuFunctions.cpp:3:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h: In member function 'size_t AsyncEventSourceClient::packetsWaiting() const':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h:93:59: error: 'const class LinkedList<AsyncEventSourceMessage*>' has no member named 'length'
+     size_t  packetsWaiting() const { return _messageQueue.length(); }
+                                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:39:7: error: redeclared with 2 template parameters
+ class LinkedList {
+       ^~~~~~~~~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:8:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: previous declaration 'template<class T> class LinkedList' used 1 template parameter
+ class LinkedList{
+       ^~~~~~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In constructor 'StringArray::StringArray()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:187:37: error: no matching function for call to 'LinkedList<String>::LinkedList(std::nullptr_t)'
+   StringArray() : LinkedList(nullptr) {}
+                                     ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:8:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = String]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = String]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<String>::LinkedList(const LinkedList<String>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'std::nullptr_t' to 'const LinkedList<String>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In member function 'bool StringArray::containsIgnoreCase(const String&)':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'begin' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\functional:54,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\cores\esp32/HardwareSerial.h:49,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\cores\esp32/Arduino.h:184,
+                 from C:\Users\School\AppData\Local\arduino\sketches\CC5DB366C29E0895874271F69064D121\sketch\esp32_marauder.ino.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:87:5: note:   'std::begin'
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'end' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\functional:54,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\cores\esp32/HardwareSerial.h:49,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\cores\esp32/Arduino.h:184,
+                 from C:\Users\School\AppData\Local\arduino\sketches\CC5DB366C29E0895874271F69064D121\sketch\esp32_marauder.ino.cpp:1:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:97:5: note:   'std::end'
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: At global scope:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:449:36: error: 'ConstIterator' in 'using headers_t = class LinkedList<AsyncWebHeader*>' {aka 'class LinkedList<AsyncWebHeader*>'} does not name a type
+   using ConstIterator = headers_t::ConstIterator;
+                                    ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:455:3: error: 'ConstIterator' does not name a type
+   ConstIterator begin() const { return _headers.begin(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:456:3: error: 'ConstIterator' does not name a type
+   ConstIterator end() const { return _headers.end(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: In constructor 'DefaultHeaders::DefaultHeaders()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:446:57: error: no matching function for call to 'LinkedList<AsyncWebHeader*>::LinkedList(DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>)'
+   :_headers(headers_t([](AsyncWebHeader *h){ delete h; }))
+                                                         ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:8:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<AsyncWebHeader*>::LinkedList(const LinkedList<AsyncWebHeader*>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>' to 'const LinkedList<AsyncWebHeader*>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:468,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h: In member function 'bool AsyncWebSocketClient::canSend()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h:233:43: error: 'class LinkedList<AsyncWebSocketMessage*>' has no member named 'length'
+     bool canSend() { return _messageQueue.length() < WS_MAX_QUEUED_MESSAGES; }
+                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:469,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\esp32_marauder.ino:22:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h: In member function 'size_t AsyncEventSourceClient::packetsWaiting() const':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h:93:59: error: 'const class LinkedList<AsyncEventSourceMessage*>' has no member named 'length'
+     size_t  packetsWaiting() const { return _messageQueue.length(); }
+                                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:39:7: error: redeclared with 2 template parameters
+ class LinkedList {
+       ^~~~~~~~~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: previous declaration 'template<class T> class LinkedList' used 1 template parameter
+ class LinkedList{
+       ^~~~~~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In constructor 'StringArray::StringArray()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:187:37: error: no matching function for call to 'LinkedList<String>::LinkedList(std::nullptr_t)'
+   StringArray() : LinkedList(nullptr) {}
+                                     ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = String]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = String]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<String>::LinkedList(const LinkedList<String>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'std::nullptr_t' to 'const LinkedList<String>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h: In member function 'bool StringArray::containsIgnoreCase(const String&)':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'begin' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:87:5: note:   'std::begin'
+     begin(_Tp (&__arr)[_Nm])
+     ^~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:29,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: error: 'end' was not declared in this scope
+     for (const auto& s : *this) {
+                           ^~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/StringArray.h:190:27: note: suggested alternative:
+In file included from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\string:51,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\stdexcept:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\array:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\tuple:39,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\unique_ptr.h:37,
+                 from c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\memory:80,
+                 from C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS\src/FS.h:24,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2750,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\users\school\appdata\local\arduino15\packages\esp32\tools\xtensa-esp32s3-elf-gcc\esp-2021r2-patch5-8.4.0\xtensa-esp32s3-elf\include\c++\8.4.0\bits\range_access.h:97:5: note:   'std::end'
+     end(_Tp (&__arr)[_Nm])
+     ^~~
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: At global scope:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:449:36: error: 'ConstIterator' in 'using headers_t = class LinkedList<AsyncWebHeader*>' {aka 'class LinkedList<AsyncWebHeader*>'} does not name a type
+   using ConstIterator = headers_t::ConstIterator;
+                                    ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:455:3: error: 'ConstIterator' does not name a type
+   ConstIterator begin() const { return _headers.begin(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:456:3: error: 'ConstIterator' does not name a type
+   ConstIterator end() const { return _headers.end(); }
+   ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h: In constructor 'DefaultHeaders::DefaultHeaders()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:446:57: error: no matching function for call to 'LinkedList<AsyncWebHeader*>::LinkedList(DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>)'
+   :_headers(headers_t([](AsyncWebHeader *h){ delete h; }))
+                                                         ^
+In file included from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\configs.h:2752,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note: candidate: 'LinkedList<T>::LinkedList(int, T) [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList(int sizeIndex, T _t){
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:181:1: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note: candidate: 'LinkedList<T>::LinkedList() [with T = AsyncWebHeader*]'
+ LinkedList<T>::LinkedList()
+ ^~~~~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:113:1: note:   candidate expects 0 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note: candidate: 'constexpr LinkedList<AsyncWebHeader*>::LinkedList(const LinkedList<AsyncWebHeader*>&)'
+ class LinkedList{
+       ^~~~~~~~~~
+c:\Users\School\Documents\Arduino\libraries\LinkedList/LinkedList.h:26:7: note:   no known conversion for argument 1 from 'DefaultHeaders::DefaultHeaders()::<lambda(AsyncWebHeader*)>' to 'const LinkedList<AsyncWebHeader*>&'
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:468,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h: In member function 'bool AsyncWebSocketClient::canSend()':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncWebSocket.h:233:43: error: 'class LinkedList<AsyncWebSocketMessage*>' has no member named 'length'
+     bool canSend() { return _messageQueue.length() < WS_MAX_QUEUED_MESSAGES; }
+                                           ^~~~~~
+In file included from c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/ESPAsyncWebServer.h:469,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\EvilPortal.h:6,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:35,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h: In member function 'size_t AsyncEventSourceClient::packetsWaiting() const':
+c:\Users\School\Documents\Arduino\libraries\ESPAsyncWebServer\src/AsyncEventSource.h:93:59: error: 'const class LinkedList<AsyncEventSourceMessage*>' has no member named 'length'
+     size_t  packetsWaiting() const { return _messageQueue.length(); }
+                                                           ^~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'NimBLEAdvertisementData WiFiScan::GetUniversalAdvertisementData(WiFiScan::EBLEPayloadType)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:109:73: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+           AdvData.addData(std::string((char *)AdvData_Raw, 7 + name_len));
+                                                                         ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:140:65: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+             AdvData.addData(std::string((char *)AdvData_Raw, 11));
+                                                                 ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:174:65: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+             AdvData.addData(std::string((char *)AdvData_Raw, 21));
+                                                                 ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:204:63: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+           AdvData.addData(std::string((char *)AdvData_Raw, 15));
+                                                               ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:231:63: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+           AdvData.addData(std::string((char *)AdvData_Raw, 14));
+                                                               ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:283:62: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+           AdvData.addData(std::string((char *)AdvData_Raw, i));
+                                                              ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:296:92: error: no matching function for call to 'NimBLEAdvertisementData::addData(std::__cxx11::string)'
+               AdvData.addData(std::string((char*)airtag.payload.data(), airtag.payloadSize));
+                                                                                            ^
+In file included from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertising.h:37,
+                 from c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEDevice.h:312,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.h:17,
+                 from C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2:
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const uint8_t*, size_t)'
+     bool addData(const uint8_t* data, size_t length);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:37:10: note:   candidate expects 2 arguments, 1 provided
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note: candidate: 'bool NimBLEAdvertisementData::addData(const std::vector<unsigned char>&)'
+     bool addData(const std::vector<uint8_t>& data);
+          ^~~~~~~
+c:\Users\School\Documents\Arduino\libraries\NimBLE-Arduino\src/NimBLEAdvertisementData.h:38:10: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<unsigned char>&'
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: At global scope:
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:320:76: error: expected class-name before '{' token
+     class bluetoothScanAllCallback: public NimBLEAdvertisedDeviceCallbacks {
+                                                                            ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void bluetoothScanAllCallback::onResult(NimBLEAdvertisedDevice*)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:331:59: error: cannot convert 'const std::vector<unsigned char>' to 'uint8_t*' {aka 'unsigned char*'} in initialization
+           uint8_t* payLoad = advertisedDevice->getPayload();
+                                                           ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:332:42: error: 'class NimBLEAdvertisedDevice' has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+           size_t len = advertisedDevice->getPayloadLength();
+                                          ^~~~~~~~~~~~~~~~
+                                          getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:361:63: error: cannot convert 'const std::vector<unsigned char>' to 'uint8_t*' {aka 'unsigned char*'} in initialization
+               uint8_t* payLoad = advertisedDevice->getPayload();
+                                                               ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:362:46: error: 'class NimBLEAdvertisedDevice' has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+               size_t len = advertisedDevice->getPayloadLength();
+                                              ^~~~~~~~~~~~~~~~
+                                              getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:412:63: error: cannot convert 'const std::vector<unsigned char>' to 'uint8_t*' {aka 'unsigned char*'} in initialization
+               uint8_t* payLoad = advertisedDevice->getPayload();
+                                                               ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:413:46: error: 'class NimBLEAdvertisedDevice' has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+               size_t len = advertisedDevice->getPayloadLength();
+                                              ^~~~~~~~~~~~~~~~
+                                              getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:523:63: error: cannot convert 'const std::vector<unsigned char>' to 'uint8_t*' {aka 'unsigned char*'} in initialization
+               uint8_t* payLoad = advertisedDevice->getPayload();
+                                                               ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:524:46: error: 'class NimBLEAdvertisedDevice' has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+               size_t len = advertisedDevice->getPayloadLength();
+                                              ^~~~~~~~~~~~~~~~
+                                              getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:764:63: error: cannot convert 'const std::vector<unsigned char>' to 'uint8_t*' {aka 'unsigned char*'} in initialization
+               uint8_t* payLoad = advertisedDevice->getPayload();
+                                                               ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:765:46: error: 'class NimBLEAdvertisedDevice' has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+               size_t len = advertisedDevice->getPayloadLength();
+                                              ^~~~~~~~~~~~~~~~
+                                              getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'String WiFiScan::classifyBLEDevice(MarauderBLEAdvertisedDevice*)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2099:60: error: cannot convert 'const std::vector<unsigned char>' to 'const uint8_t*' {aka 'const unsigned char*'} in initialization
+     const uint8_t* payload = advertised_device->getPayload();
+                                                            ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2100:54: error: 'using MarauderBLEAdvertisedDevice = class NimBLEAdvertisedDevice' {aka 'class NimBLEAdvertisedDevice'} has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+     const size_t payload_length = advertised_device->getPayloadLength();
+                                                      ^~~~~~~~~~~~~~~~
+                                                      getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void WiFiScan::retainBLEFoxHuntSubtype(MarauderBLEAdvertisedDevice*, const BleDevice&)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2175:62: error: cannot convert 'const std::vector<unsigned char>' to 'const uint8_t*' {aka 'const unsigned char*'} in initialization
+       const uint8_t* payload = advertised_device->getPayload();
+                                                              ^
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:2176:56: error: 'using MarauderBLEAdvertisedDevice = class NimBLEAdvertisedDevice' {aka 'class NimBLEAdvertisedDevice'} has no member named 'getPayloadLength'; did you mean 'getPayloadByType'?
+       const size_t payload_length = advertised_device->getPayloadLength();
+                                                        ^~~~~~~~~~~~~~~~
+                                                        getPayloadByType
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void WiFiScan::copyNimbleMac(const NimBLEAddress&, unsigned char*)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:3348:37: error: 'const class NimBLEAddress' has no member named 'getNative'; did you mean 'getBase'?
+         const uint8_t* bytes = addr.getNative();  // NimBLE gives MAC as uint8_t[6]
+                                     ^~~~~~~~~
+                                     getBase
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void WiFiScan::executeBLESpam(WiFiScan::EBLEPayloadType)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:5922:23: error: 'class NimBLEAdvertising' has no member named 'setMinPreferred'; did you mean 'setMinInterval'?
+         pAdvertising->setMinPreferred(0x20);
+                       ^~~~~~~~~~~~~~~
+                       setMinInterval
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:5923:23: error: 'class NimBLEAdvertising' has no member named 'setMaxPreferred'; did you mean 'setMaxInterval'?
+         pAdvertising->setMaxPreferred(0x20);
+                       ^~~~~~~~~~~~~~~
+                       setMaxInterval
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void WiFiScan::RunBluetoothScan(uint8_t, uint16_t)':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7197:21: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+           pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), true);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7204:21: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+           pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), true);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7222:21: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+           pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), true);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7242:19: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+         pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), false);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7261:19: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+         pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), false);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7270:19: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+         pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), true);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp: In member function 'void WiFiScan::setupRemoteIdBle()':
+C:\Users\School\Downloads\ESP32Marauder-master\ESP32Marauder-master\esp32_marauder\WiFiScan.cpp:7305:17: error: 'class NimBLEScan' has no member named 'setAdvertisedDeviceCallbacks'
+       pBLEScan->setAdvertisedDeviceCallbacks(new bluetoothScanAllCallback(), false);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multiple libraries were found for "SD.h"
+  Used: C:\Users\School\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\SD
+  Not used: C:\Users\School\AppData\Local\Arduino15\libraries\SD
+exit status 1
+
+Compilation error: no matching function for call to 'LinkedList<String>::LinkedList()'
